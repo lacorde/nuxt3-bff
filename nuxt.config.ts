@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
-      apiBaseUrl: process.env.API_BASE_URL,
+      apiBaseUrl: process.env.API_BASE_URL || 'https://fakestoreapi.com/',
     },
   },
   imports: {
